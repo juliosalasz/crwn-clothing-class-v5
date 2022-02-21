@@ -1,6 +1,6 @@
 import React from "react";
 import { auth, createUserProfileDocument } from "./firebase/Firebase.utils";
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import { createStructuredSelector } from "reselect";
 
 import "./App.css";
@@ -40,7 +40,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <BrowserRouter>
+      <div>
         <HeaderComponent />
         <Switch>
           <Route exact path="/" component={Homepage} />
@@ -54,7 +54,7 @@ class App extends React.Component {
             }
           />
         </Switch>
-      </BrowserRouter>
+      </div>
     );
   }
 }
