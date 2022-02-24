@@ -1,12 +1,14 @@
 import DirectoryComponent from "../../components/directory/directoyComponent";
 
+import HomePageContainer from "./homePageStyles";
+
 import "./homepageComponent.scss";
 
 const Homepage = () => {
   return (
-    <div className="homepage">
+    <HomePageContainer>
       <DirectoryComponent />
-    </div>
+    </HomePageContainer>
   );
 };
 
